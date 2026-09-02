@@ -1,0 +1,143 @@
+
+Discarded input sections
+
+ .text          0x00000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .data          0x00000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .text          0x00000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+ .data          0x00000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00080000         xr
+RAM              0x20000000         0x00030000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+LOAD CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+END GROUP
+START GROUP
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/thumb/v7e-m+fp/hard/libgcc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/13.2.1/../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libnosys.a
+END GROUP
+                0x20030000                        _estack = (ORIGIN (RAM) + LENGTH (RAM))
+
+.isr_vector     0x08000000       0x40
+                0x08000000                        . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000       0x40 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+                0x08000000                g_pfnVectors
+                0x08000040                        . = ALIGN (0x4)
+
+.text           0x08000040       0xc4
+                0x08000040                        . = ALIGN (0x4)
+ *(.text)
+ *(.text*)
+ .text.Default_Handler
+                0x08000040        0x8 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+                0x08000040                Default_Handler
+ .text.Reset_Handler
+                0x08000048       0x5c CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+                0x08000048                Reset_Handler
+ .text.main     0x080000a4       0x60 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+                0x080000a4                main
+ *(.rodata)
+ *(.rodata*)
+                0x08000104                        . = ALIGN (0x4)
+                0x08000104                        _etext = .
+                0x08000104                        _sidata = LOADADDR (.data)
+
+.glue_7         0x08000104        0x0
+ .glue_7        0x08000104        0x0 linker stubs
+
+.glue_7t        0x08000104        0x0
+ .glue_7t       0x08000104        0x0 linker stubs
+
+.vfp11_veneer   0x08000104        0x0
+ .vfp11_veneer  0x08000104        0x0 linker stubs
+
+.v4_bx          0x08000104        0x0
+ .v4_bx         0x08000104        0x0 linker stubs
+
+.iplt           0x08000104        0x0
+ .iplt          0x08000104        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+
+.rel.dyn        0x08000104        0x0
+ .rel.iplt      0x08000104        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+
+.data           0x20000000        0x0 load address 0x08000104
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sdata = .
+ *(.data)
+ *(.data*)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _edata = .
+
+.igot.plt       0x20000000        0x0 load address 0x08000104
+ .igot.plt      0x20000000        0x0 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+
+.bss            0x20000000        0x0 load address 0x08000104
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _sbss = .
+ *(.bss)
+ *(.bss*)
+ *(COMMON)
+                0x20000000                        . = ALIGN (0x4)
+                0x20000000                        _ebss = .
+OUTPUT(FreqsyTNC_Blink elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x1ea
+ .debug_info    0x00000000      0x13e CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .debug_info    0x0000013e       0xac CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.debug_abbrev   0x00000000      0x156
+ .debug_abbrev  0x00000000       0xe1 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .debug_abbrev  0x000000e1       0x75 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.debug_aranges  0x00000000       0x48
+ .debug_aranges
+                0x00000000       0x28 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .debug_aranges
+                0x00000028       0x20 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.debug_rnglists
+                0x00000000       0x2c
+ .debug_rnglists
+                0x00000000       0x19 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .debug_rnglists
+                0x00000019       0x13 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.debug_line     0x00000000      0x1e2
+ .debug_line    0x00000000       0xf6 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .debug_line    0x000000f6       0xec CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.debug_str      0x00000000      0x241
+ .debug_str     0x00000000      0x241 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+                                0x222 (size before relaxing)
+ .debug_str     0x00000241      0x1ca CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.comment        0x00000000       0x26
+ .comment       0x00000000       0x26 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+                                 0x27 (size before relaxing)
+ .comment       0x00000026       0x27 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.ARM.attributes
+                0x00000000       0x34
+ .ARM.attributes
+                0x00000000       0x34 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .ARM.attributes
+                0x00000034       0x34 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj
+
+.debug_frame    0x00000000       0x74
+ .debug_frame   0x00000000       0x48 CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/startup.c.obj
+ .debug_frame   0x00000048       0x2c CMakeFiles/FreqsyTNC_Blink.dir/Core/Src/main.c.obj

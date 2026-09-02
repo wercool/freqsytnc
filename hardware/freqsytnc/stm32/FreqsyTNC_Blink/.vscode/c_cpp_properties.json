@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "STM32-ARM",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32WBxx/Include",
+                "/usr/lib/gcc/arm-none-eabi/13.2.1/include",
+                "/usr/arm-none-eabi/include"
+            ],
+            "defines": [
+                "STM32WB55xx"
+            ],
+            "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+            "cStandard": "c11",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,3 @@
+/home/maska/git/freqsytnc/hardware/freqsytnc/stm32/FreqsyTNC_Blink/build/CMakeFiles/FreqsyTNC_Blink.dir
+/home/maska/git/freqsytnc/hardware/freqsytnc/stm32/FreqsyTNC_Blink/build/CMakeFiles/edit_cache.dir
+/home/maska/git/freqsytnc/hardware/freqsytnc/stm32/FreqsyTNC_Blink/build/CMakeFiles/rebuild_cache.dir
